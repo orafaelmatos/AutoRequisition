@@ -1,12 +1,34 @@
-# Automaçao Com Python
+# Automation Bot for HPRO System
+This project automates repetitive daily tasks using Python. It functions as a virtual assistant designed specifically for the HPRO system used in my workplace.
 
-Esse sistema serve para automatizar tarefas repetitivas no dia a dia. Funciona como um 'robo'.
-Ele está configurado para o sistema que uso no meu trabalho atualmente (HPRO).
+## Overview
+The automation process reads data from Excel files using pandas and interacts with the system interface through pyautogui, simulating human actions such as mouse clicks and keyboard typing.
 
-Usei a lib 'pandas' para tirar dados do excel que uso no trabalho, e para fazer a automação utilizei a lib 'pyautogui'.
-O funcionamento é basicamente o seguinte:
-  - Eu alimento meu excel com as informações necessárias para comprar determinado item, como por exemplo: código do item no sistema, quantidade, nome, setor e etc.
-  - Depois o pyautogui entra em ação e requisita todos os itens de forma automática (como um robo).
+The workflow is simple:
 
- Leva-se cerca de 1 minuto e 40 segundos para requisitar um item manualmente. Se requisitar 50 itens (o que no meu caso é muito comum) demoraria 1 hora e 20 minutos para requisitar tudo.
- Com o meu 'robo' requisita o item em 4 segundos. Ele demoraria 20 minutos para requisitar os mesmos 50 itens. Ganhando 1 hora em uma tarefa que eu repetia todos os dias.
+I populate an Excel file with the required information to request items (e.g., product code, quantity, department, requester, etc.).
+
+The bot automatically navigates through the HPRO system and submits each item request on my behalf.
+
+## Why It Matters
+Manually submitting a single item request in the HPRO system takes approximately 1 minute and 40 seconds.
+
+With this automation:
+
+A single item is requested in ~4 seconds
+
+50 items can be requested in ~20 minutes
+
+Compared to ~1 hour and 20 minutes manually
+
+This saves over 1 hour per day on repetitive work, allowing me to focus on more important tasks.
+
+## Technologies Used
+Python
+  - pyautogui — to automate mouse and keyboard input
+  
+  - pandas — to process Excel spreadsheets
+  
+  - openpyxl — for Excel file manipulation
+  
+  - subprocess — to launch the HPRO application
