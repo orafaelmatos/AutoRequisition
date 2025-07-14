@@ -1,7 +1,7 @@
-from funcoes_hpro import abrir_hpro, cadastrar_usuario_senha_apertar_enter, requisitar_item_estoque
+from functions import open_hpro, login_user, request_stock_item
 
-abrir_hpro()
+open_hpro()
 
-cadastrar_usuario_senha_apertar_enter()
+login_user()
 
-requisitar_item_estoque()
+request_stock_item()

@@ -1,7 +1,7 @@
-from funcoes_hpro import hotkeys, abrir_hpro, cadastrar_usuario_senha_apertar_enter, requisitar_item_compra
+from functions import open_hpro, login_user, request_purchase_item
 
-abrir_hpro()
+open_hpro()
 
-cadastrar_usuario_senha_apertar_enter()
+login_user()
 
-requisitar_item_compra()
+request_purchase_item()
